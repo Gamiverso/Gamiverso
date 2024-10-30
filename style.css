@@ -1,150 +1,164 @@
-body{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    height: 100vh !important;
-    font-family: 'Noto Sans', 'Sans-serif';
-    color: black;
- 
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh !important;
+  font-family: "Noto Sans", "Sans-serif";
+  color: black;
 }
-.btn-rojo{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font: 0.8rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    background-color:#50BA8E;
-    padding: 1rem 2rem;
-    border-radius: 20px;
-    display: inline-block;
-    align-self: center;
-
+.btn-rojo {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font: 0.8rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #50ba8e;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  display: inline-block;
+  align-self: center;
 }
 /* secciones*/
 /*seccion1*/
 
 
-#seccion1Contenido{
-  
-    background: url(./recursos/imagenes/AS.gif) no-repeat center/cover;
-    
-    background-size: 70%;
-    height :100VH;
-    
-
-
-    color:#21515c;
-
-
-
-}
-#seccion1{
-    background-color:#e2f7e3;
+/*seccion de la animacion principal */
+#seccion1 {
+  background-color: #e2f7e3;
 }
 
-#barra{
 
 
-    display:  flex;
-    flex-direction: row;
-    justify-content: space-between;
-  
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-size: 1.5rem;
-    background-color:#bce0d0;
-    
-    
-    
+#barra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  background-color: #21515c;
 }
 
-#logo{
 
-
-    margin: 0;
+#logo {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    color: #ffffff;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 0;
+    padding-left: 20px; /* Ajusta este valor para más o menos separación */
+    
+}
+
+
+.animate__animated.animate__fadeInDown{
+    --animate-duration: 2s;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #2C3E50;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 1; /* Asegura que el texto esté sobre el video */
+  }  
+
+nav > a {
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+nav > a:hover {
+  color: #58b75c;
+}
+
+* {
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar relleno predeterminado */
+    box-sizing: border-box; /* Asegurarse de que el tamaño de los elementos se calcule correctamente */
+}
+
+html, body {
+    height: 100%; /* Hacer que el html y body ocupen toda la altura */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+#seccion1Contenido {
+    position: relative;
+    height: auto; /* Ocupa el ancho completo de la pantalla */
+    height: 88vh; /* Ajusta el contenedor a la altura de la pantalla */
+    overflow: hidden;
+}
+
+#seccion1Contenido video {
+    width: 100vw; /* Asegura que el video cubra todo el ancho */
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    position: absolute; /* Hace que el video esté en el fondo */
+    top: 0;
+    left: 0;
+    z-index: 0; /* Coloca el video en el fondo */
+}
+
+/* Estilo para el texto que aparece sobre el video */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #2C3E50;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 1; /* Asegura que el texto esté sobre el video */
+}
+#seccion1Contenido > p {
+    position: relative; 
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.6rem; /* Tamaño de fuente para pantallas grandes */
+    margin-bottom: 0.5rem; /* Espacio inferior */
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+#seccion1Contenido > a {
+    position: relative;
+    top: 35%; /* Ajusta según sea necesario */
+    left: 50%; /* Centramos horizontalmente el enlace */
+    transform: translateX(-50%); /* Para centrarlo perfectamente */
+}
+
+#seccion1Contenido > hr {
+    width: 10rem;
+    border-color: #21b387;
+}
+
+#seccion1Contenido > h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
     font-weight: 700;
-    font-stretch: wider;
-float:left;
-
-
+    margin-bottom: 2.5rem;
 }
-
-nav>a{
-    
-text-decoration: none;
-color:#21515c;
-padding-left: 1rem;
-padding-right: 1rem;
-
-}
-nav > a:hover{
-   
-    color:#58b75c;
-
-    
- }
-
-    #seccion1Contenido >p{
-        
-            
-
-       
-        width:1000px;
-         margin:0px auto;
-       text-transform: capitalize;
-       font-family: Verdana, Geneva, Tahoma, sans-serif;
-       font-size: 10rem;
-       margin-bottom: 01.5rem;
-       font-weight: bold;
-       text-align:center;
-       
-    
-      
-    
-        }
-
-        #seccion1Contenido >p{
-        
-        position: absolute;left: 12%;
-        position: absolute;top: 22%;
-        text-transform: capitalize;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 10rem;
-        margin-bottom: 0.5rem;
-        font-weight: bold;     
-        font-size: 2.5rem;
- 
-        }
-            
-        #seccion1Contenido >a{
- 
-            
-            position: absolute;left: 42%;
-            position: absolute;top: 35%;
-          
-        
-            }
-            
-        #seccion1Contenido >hr{
-        
-            width: 10rem;
-            border-color:#21b387; 
-          
-        
-         }
-            #seccion1Contenido>h1{
-        
-              font-family: Verdana, Geneva, Tahoma, sans-serif;
-              text-transform: uppercase;
-              font-size: 4rem;
-              font-weight: 700;
-              margin-bottom: 2.5rem;
-              
-            
-                }
-                /* --------------seccion2 ------------------------
+/* --------------seccion2 ------------------------
                 #seccion2
                 {
                     background-color: #f4f5f9;
@@ -158,256 +172,296 @@ nav > a:hover{
 
                 } */
 
-                /*--------------seccion3 ------------------------*/
-                #seccion3{
-
-
-                    margin: auto;
-                    display: flex;
-                    flex-direction: column;
-                    width: 80%;
-                    margin-bottom: 20px;
- 
-                    
-                }
-                #subtitulo1
-                {
-
-                    margin-bottom: 2rem;
-
-                }
-
-                #seccion3 > h2 {
-                    text-transform: uppercase;
-                    text-align: center;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    font-size: 2.5rem;
-                    font-weight: 700;
-
-                }
-               
-                #contenedor3{
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
-                    display: flex;
-                    flex-direction: row;
-                    
-                }
-                .imagenesOrnamentales{
-                    padding-right: 1rem;
-                    padding-left: -10rem;
-                    
-
-                }
-                .imagenesOrnamentales > h6 {
-                    text-align: center;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    font-size: 1.5rem;
-                    font-weight: 700;
-                    margin-bottom: 1rem;
-
-                }
-                .imagenesOrnamentales > p {
-                    text-align: center;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    font-size: 1rem;
-                    font-weight: 700;
-                    margin-bottom: 1rem;
-
-                }
-
-                #imagenesOrnamentales >p{
-                   
-                    margin-bottom: 2rem;
-
-                }
-                .imagenesOrnamentales >img{
-                    width:400px;
-                    height:450px;
-                    margin-bottom:-3rem;
-                    
-
-                }
-                
-                /*--------------seccion 4 ------------------------*/
-                #seccion4{
-                    background: linear-gradient(rgba(33, 34, 33, 0.7),rgba(18, 19, 18, 0.7)),url(./recursos/imagenes/medicinales.jpg) no-repeat center/cover;
-                    background-attachment: fixed;
-                    height: 100vh;
-                    color: white;
-                    display: flex;
-                    flex-direction: column;
-
-
-
-                }
-                #contener2{
-                    width: 80%;
-                    margin: auto;
-                    display: flex;
-                    flex-direction: row;
-
-                }
-               
-                #derecha > p{
-
-                    font-size: 1.3rem;
-                    margin-bottom: 4rem;
-                }
-                #derecha > h3{
-
-                    text-transform: uppercase;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    font-size: 2.5rem;
-                    font-weight: 700;
-                    margin-bottom: 1.5rem;
-                }
-                #derecha > p{
-
-                    text-transform: uppercase;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    font-size: 1rem;
-                    font-weight: 700;
-                    margin-bottom: 1.5rem;
-                    text-align:center;
-                }
-                
-
-             /*--------------seccion 5 ------------------------*/
-
-             #seccion5{
-                 width: 80%;
-                 margin: auto;
-                 display: flex;
-                 flex-direction: row;
-                 align-items: center;
-                 padding-top: 5rem;
-                 padding-bottom: 5rem;
-             }
-             #izquierda5{
-                 flex: 1;
-             }
-             
-            
-            #izquierda5 >p{
-               
-                margin-bottom: 4rem;
-                font-size: 1.3rem;
-                
-               
-            }
-            #izquierda5>h3{
-                 
-                text-transform: uppercase;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-size: 2.5rem;
-                font-weight: 700;
-                margin-bottom: 1.5rem;
- 
-            }
-           
-           
-#dere{
-  flex: 2;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    
-    justify-items: center;
-    align-items: center ;
+/*--------------seccion3 ------------------------*/
+#seccion3 {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 20px;
+}
+#subtitulo1 {
+  margin-bottom: 2rem;
 }
 
-     
-        #izquierda5> hr {
-            width: 5rem;
-        border-color:#21b387; 
-        margin-left: 1;
-        margin-bottom: 3rem;
-        }
-  
-
-    
-
-   
-    #dere{
-        margin-left:3rem;
-      margin-bottom: 4rem;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-    }
-    #derecha5{
-        width: 60%;
-        
-        justify-content: center;
-        align-items: center;
-        
-        
-    }
-   
-    #derecha5> figure{
-        position: relative;
-        margin-bottom: -03rem;
-       margin-left: -3rem;
-       object-fit: cover;
-   
-        height: 250px;
-        width: 400px;
-        overflow:hidden;
-        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-       
-        
-    }
-    #derecha5> figure >.capa{
-        position: absolute;
-        top:0;
-        height: 100%;
-        width: 100%;
-        background: rgba(148, 216, 201, 0.7);
-        
-        opacity: 1;
-        visibility: hidden;
-        text-align: center;
-        
-    } 
-    
+#seccion3 > h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
 
 
-#derecha5> figure:hover >.capa {
-   
+#seccion3 {
+    height: 100vh; /* Establece la altura de la sección al 100% de la altura de la ventana */
+    width: 100%; /* Asegura que el ancho sea del 100% */
+}
+
+#contenedor3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+}
+
+.imagenesOrnamentales, .imagenesOrnamentales2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.imagenesOrnamentales video, .imagenesOrnamentales2 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagenesOrnamentales .capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 102, 146, 0.2); /* Fondo transparente */
     opacity: 1;
     visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8f8f8; /* Color del texto */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: 100;
-    
-} 
-#derecha5> figure:hover >.capa >h3 {
-   
-    margin-left: center;
-    margin-top:6rem;
-	
-    
+
+    /* Borde con text-shadow */
+    text-shadow: 
+        2px 2px 0 rgb(0, 0, 0, 1),  /* Sombra negra a la derecha y abajo */
+        -2px -2px 0 rgba(0, 0, 0, 1), /* Sombra negra a la izquierda y arriba */
+        2px -2px 0 rgba(0, 0, 0, 1),  /* Sombra negra a la derecha y arriba */
+        -2px 2px 0 rgba(0, 0, 0, 1);  /* Sombra negra a la izquierda y abajo */
+}
+
+
+
+.imagenesOrnamentales2 .capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(181, 63, 195, 0.2); /* Fondo transparente */
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8f8f8; /* Color del texto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5rem;
+    font-weight: 100;
+
+    /* Borde con text-shadow */
+    text-shadow: 
+        2px 2px 0 rgb(0, 0, 0, 1),  /* Sombra negra a la derecha y abajo */
+        -2px -2px 0 rgba(0, 0, 0, 1), /* Sombra negra a la izquierda y arriba */
+        2px -2px 0 rgba(0, 0, 0, 1),  /* Sombra negra a la derecha y arriba */
+        -2px 2px 0 rgba(0, 0, 0, 1);  /* Sombra negra a la izquierda y abajo */
 } 
 
-footer{
-    background-color: rgb(11, 91, 102);
-    color: white;
-    padding-bottom: 1.2rem;
+
+
+
+
+
+
+
+
+.imagenesOrnamentales > p {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#imagenesOrnamentales > p {
+  margin-bottom: 2rem;
+}
+
+
+/*--------------seccion 4 ------------------------*/
+#seccion4 {
+    position: relative;
+    height: 100vh;
+    color: #f4f5f6;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    
-    
-    }
-    footer>h4{
-        
-        margin-top: -0rem;
+    overflow: hidden; /* Asegúrate de ocultar el desbordamiento */
+    text-shadow: 
+    2px 2px 0 rgb(0, 0, 0, 1),  /* Sombra negra a la derecha y abajo */
+    -2px -2px 0 rgba(0, 0, 0, 1), /* Sombra negra a la izquierda y arriba */
+    2px -2px 0 rgba(0, 0, 0, 1),  /* Sombra negra a la derecha y arriba */
+    -2px 2px 0 rgba(0, 0, 0, 1);  /* Sombra negra a la izquierda y abajo */
+}
 
-        }
+#seccion4 video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Asegúrate de que el video esté detrás del contenido */
+    transform: translate(-50%, -50%);
+}
+
+#contener2 {
+    position: relative; /* Para que el contenido esté sobre el video */
+    z-index: 1; /* Asegúrate de que el contenido esté por encima */
+    display: flex; /* Mantiene el diseño de dos columnas */
+}
+
+
+
+/* Si deseas agregar un efecto de gradiente sobre el video */
+#seccion4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(33, 34, 33, 0.1), rgba(18, 19, 18, 0.0));
+    z-index: 0; /* Asegúrate de que el gradiente esté sobre el video */
+}
+
+#contener2 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+
+#derecha {
+    flex: 1; /* Toma el espacio restante */
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Alinea hacia la parte superior */
+}
+
+#derecha > h3 {
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0; /* Resetea márgenes */
+    padding-top: 100px; /* Ajusta este valor para subir el texto más */
+    text-align: center; /* Centra el texto */
+}
+  
+  
+
+
+/*--------------seccion 5 ------------------------*/
+
+#seccion5 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0; /* Eliminar margen inferior */
+  }
+  
+
+
+#izquierda5 > p {
+  margin-bottom: 4rem;
+  font-size: 1.7rem;
+}
+#izquierda5 > h3 {
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+
+#izquierda5 > hr {
+    width: 10rem;
+    border-color: #21b387;
+    margin-left: 0; /* Cambia el margen izquierdo a 0 para alinear a la izquierda */
+    margin-bottom: 3rem;
+  }
+  
+
+#dere {
+  margin-left: 3rem;
+  margin-bottom: 4rem;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+#derecha5 {
+  width: 60%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+footer {
+  background-color: rgb(11, 91, 102);
+  color: white;
+  padding-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer > h4 {
+  margin-top: -0rem;
+}
+
+footer > h3 {
+  margin-top: -0rem;
+}
+
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    #barra {
+      font-size: 1rem;
+      padding: 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+   #seccion1Contenido {
+        padding: 10px; /* Menos padding en móviles */
+    }
+
+    #seccion1Contenido > p {
+        font-size: 1.8rem; /* Tamaño de fuente reducido para móviles */
+        margin-bottom: 0.3rem; /* Espacio reducido */
+        padding: 5px; /* Padding reducido para evitar mucho espacio */
+    }
+
+    #seccion1Contenido > h1 {
+        font-size: 2rem; /* Ajusta el tamaño de fuente para el encabezado */
+        margin-bottom: 1rem; /* Espacio inferior reducido */
+    }
+
+    #seccion1Contenido > a {
+        margin-top: 1rem; /* Ajustar el margen superior del enlace */
+    }
     
-        footer>h3{
-        
-            margin-top: -0rem;
-    
-            }
+  }
+
+ 
