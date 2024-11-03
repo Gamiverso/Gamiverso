@@ -25,17 +25,7 @@ body{
 /*seccion1*/
 
 #seccion1Contenido{
-  
-    background: url(./recursos/ezgif-2-3348adc0f9d6.gif) no-repeat center/cover;
-    background-position: top center;
-    background-size: 20%;
-    height :40VH;
-    
-
     color:#21515c;
-
-
-
 }
 
 body > hr {
@@ -60,38 +50,33 @@ margin-bottom: 3rem;
 
 
 
-#barra{
-
-
-    display:  flex;
-    flex-direction: row;
-    justify-content: space-between;
-  
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-size: 1.5rem;
-    background-color:#bce0d0;
-    
-    
-    
+#barra {
+    font-family: 'Croissant one';
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.3rem;
+  background-color: #21515c;
 }
 
-#logo{
 
-
-    margin: 0;
+#logo {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    color: #ffffff;
     text-transform: uppercase;
-    font-weight: 700;
-    font-stretch: wider;
-float:left;
-
-
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 0;
+    padding-left: 20px; /* Ajusta este valor para más o menos separación */
+    
 }
-
 nav>a{
     
 text-decoration: none;
-color:#21515c;
+color:#ffffff;
 padding-left: 1rem;
 padding-right: 1rem;
 
@@ -104,50 +89,69 @@ nav > a:hover{
  }
 
 
-    #seccion1Contenido >p{
-        
+ #seccion1Contenido {
+    position: relative;
+    height: auto; /* Ocupa el ancho completo de la pantalla */
+    height: 88vh; /* Ajusta el contenedor a la altura de la pantalla */
+    overflow: hidden;
+}
 
-        position: absolute;left: 20%;
-        position: absolute;top: 34%;
-        text-transform: capitalize;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 10rem;
-        margin-bottom: 0.5rem;
-        font-weight: bold;     
-        font-size: 2.5rem;
-       
+#seccion1Contenido video {
+    width: 100vw; /* Asegura que el video cubra todo el ancho */
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    position: absolute; /* Hace que el video esté en el fondo */
+    top: 0;
+    left: 0;
+    z-index: 0; /* Coloca el video en el fondo */
+}
 
-    
-        }
+/* Estilo para el texto que aparece sobre el video */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #2C3E50;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 1; /* Asegura que el texto esté sobre el video */
+}
+#seccion1Contenido > p {
+    position: relative; 
+    text-transform: capitalize;
+    font-family: 'Croissant one';
+    font-size: 2.6rem; /* Tamaño de fuente para pantallas grandes */
+    margin-bottom: 0.5rem; /* Espacio inferior */
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
 
-      
-            
-        #seccion1Contenido >a{
- 
-            
-            position: absolute;left: 42%;
-            position: absolute;top: 35%;
-          
-        
-            }
-          
-        #seccion1Contenido >hr{
-        
-            width: 10rem;
-            border-color:#21b387; 
-          
-        
-         }
-            #seccion1Contenido>h1{
-        
-              font-family: Verdana, Geneva, Tahoma, sans-serif;
-              text-transform: uppercase;
-              font-size: 4rem;
-              font-weight: 700;
-              margin-bottom: 2.5rem;
-              
-            
-                }
+#seccion1Contenido > a {
+    position: relative;
+    top: 35%; /* Ajusta según sea necesario */
+    left: 50%; /* Centramos horizontalmente el enlace */
+    transform: translateX(-50%); /* Para centrarlo perfectamente */
+}
+
+#seccion1Contenido > hr {
+    width: 10rem;
+    border-color: #21b387;
+}
+
+#seccion1Contenido > h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
                 /* --------------seccion2 ------------------------
                 #seccion2
                 {
@@ -268,16 +272,93 @@ nav > a:hover{
 
              /*--------------seccion 5 ------------------------*/
 
-             #seccion5{
-                 width: 80%;
-                 margin: auto;
-                 display: flex;
-                 flex-direction: row;
-                 align-items: center;
-                 padding-top: 5rem;
-                 padding-bottom: 5rem;
-             }
-   
+             #seccion5 {
+                font-family: 'Croissant one';
+                height: 630px;
+                width: 100%;
+                display: flex;
+                flex-direction: column; /* Cambia a columna para centrar verticalmente */
+                align-items: center; /* Alinea todos los elementos en el centro */
+                background: #E5FCFB;
+                margin: 0;
+                padding: 0;
+
+            }
+            body, .container-fluid {
+                margin: 0;
+                padding: 0;
+            }
+
+
+            .card {
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+
+            
+            .card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+                background-color: #78a0aa6f; /* Color de fondo al pasar el mouse */
+                color: #f45b09; /* Cambia este valor al color deseado para el texto */
+            }
+            
+            
+            .card-title {
+                transition: font-size 0.3s;
+            }
+            
+            .card:hover .card-title {
+                font-size: 1.1em; /* Aumenta el tamaño del texto */
+            }
+
+            
+            #dere {
+                display: flex; /* Asegura que el contenido esté alineado horizontalmente */
+                 /* Centra el contenido dentro de #dere */
+            }
+            #derecha5 > h5 {
+                text-transform: uppercase;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 2.5rem;
+
+                text-align: center; /* Alinea el texto a la izquierda */
+                margin-bottom: 0.05rem; 
+                margin-top: 10px;
+            }
+            #derecha5 > h6 {
+                text-transform: uppercase;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 2rem;
+
+                text-align: center; /* Alinea el texto a la izquierda */
+                margin-top: 5px; 
+                margin-bottom: 0rem; 
+                
+            }
+
+            #derecha5 .precio {
+                text-transform: uppercase;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 0.9rem;
+                color: rgb(17, 16, 16);
+                text-align: left;
+                margin-bottom: 0rem; 
+                margin-top: 8px; /* Espaciado superior opcional */
+                width: 100%; /* Asegura que ocupe todo el ancho disponible */
+            }
+
+            #derecha5 .duracion {
+                text-transform: uppercase;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 0.9rem;
+                color: rgb(17, 16, 16);
+                text-align: left;
+                margin-bottom: 0rem; 
+                margin-top: 5px; /* Espaciado superior opcional */
+                width: 100%; /* Asegura que ocupe todo el ancho disponible */
+            }
+            
+            
              
              
 #dere{
@@ -295,41 +376,37 @@ nav > a:hover{
 
    
     #dere{
-        margin-left:-7rem;
+       
       margin-bottom: 4rem;
         padding: 0;
         box-sizing: border-box;
         font-family: sans-serif;
     }
-    #derecha5{
-        width: 60%;
-        
+    #derecha5 {
+        width: auto; /* Ajusta el ancho al contenido interno */
+        display: flex;
         justify-content: center;
         align-items: center;
-        
-        
     }
    
-    #derecha5> figure{
-        
+    #derecha5 > figure {
         position: relative;
-        
-       object-fit: cover;
-       
-        height: 250px;
+        object-fit: cover;
+        height: 500px;
         width: 330px;
         display: flex;
-        overflow:hidden;
+        overflow: hidden;
         box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-       
-        
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina relleno si hay alguno */
     }
+    
  #derecha5 >figure >img{
         
     height: auto;
     width: auto;
-    max-height: height 250px; 
-    max-width: width 300px ;
+    max-height: height 500px; 
+    max-width: width 330px ;
     transition: all 500ms ease-in-out;
    
     
@@ -339,7 +416,7 @@ nav > a:hover{
         top:0;
         height: 100%;
         width: 100%;
-        background: rgba(110, 145, 142, 0.459);
+        background: rgba(7, 242, 222, 0.459);
       
 
         transition: all 500ms ease-in-out;
@@ -368,24 +445,19 @@ nav > a:hover{
     
 } 
 
-footer{
+footer {
+    padding-top:  1rem;
     background-color: rgb(11, 91, 102);
     color: white;
-    padding-bottom: 1.2rem;
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    
-    
-    }
-    footer>h4{
-        
-        margin-top: -0rem;
+    font-family: 'Croissant one';
+}
 
-        }
-    
-        footer>h3{
-        
-            margin-top: -0rem;
-    
-            }
+  @media (max-width: 600px) {
+    #barra {
+      font-size: 1rem;
+      padding: 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+}

@@ -1,92 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style3.css">
-</head>
-<!-- rgba(66, 207, 188, 0.829 -->
-<body><label for=""></label>
-    
-    <!-- Primera seccion -->
-    <div id=seccion1>
-        <div id="barra">
+    <title>Gamiverso - Nosotros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        h2 {
+            font-family: 'Croissant One', sans-serif;
+            font-size: 1.5rem;
+        }
+        h1 {
+            font-family: 'Croissant One', sans-serif;
+        }
+        .custom-title {
+            color: #000000; /* Color verde */
+        }
+        .custom-btn {
+            background-color: #10ac75; /* Color verde */
+            border-color: #000000;
+            color: white;
+        }
+        .custom-btn:hover {
+            background-color: #28ced0; /* Color verde más oscuro */
+            border-color: #1e7e34;
+        }
+        #background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+        .video-background {
+            position: relative;
+            z-index: 1; /* Mantiene el contenido encima del video */
+            color: white; /* Asegúrate de que el texto sea visible */
+            text-align: center; /* Centra el texto */
+            padding: 20px; /* Espaciado alrededor del contenido */
+        }
+        #barra {
+            font-family: 'Croissant one';
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 2rem; /* Aumentar el padding para más espacio */
+            font-size: 1.3rem;
+            background-color: #21515c;
+        }
+        #logo {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 24px;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1;
+            margin: 0;
+            padding-left: 20px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 0 1rem;
+        }
 
-            <p id="logo" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; plantas <span style="color:#47a17c" >GREENGARDEN</span></p>
+        footer {
+            padding-top:  1rem;
+            background-color: rgb(11, 91, 102);
+            color: white;
+            text-align: center;
+            font-family: 'Croissant one';
+        }
+
+        @media (max-width: 600px) {
+    #barra {
+      font-size: 1rem;
+      padding: 1rem;
+      flex-direction: column;
+      align-items: center;
+    }}
+
+    </style>
+</head>
+<body>
+    <div id="seccion1">
+        <div id="barra">
+            <p id="logo">GAMIVERSO</p>
             <nav>
                 <a href="./index.html">Inicio</a>
-                <a href="./galeria.html">Galería</a>
-                <a href="./about.html">Acerca</a>
-        
-        
+                <a href="./comprar.html">Cómo comprar</a>
+                <a href="./productos.html">Productos</a>
+                <a href="./about.html">Nosotros</a>
             </nav>
         </div>
-        <div id=seccion1Contenido>
-            <p style="color:#21515c" > ACERCA DE GREENGARDEN </p>
-       
-        
-        
-        </div>
-
     </div>
-    <hr>
-<!-- Segunda seccion-->
-    <div id="seccion2">
-        <div id="seccion2contenido">
-        <img src="./recursos/acerca/fotomi.jpeg" alt="">
-        
+
+    <div class="container my-5 p-4" style="background-color: #ffffff; border-radius: 0.5rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <div class="mb-4" style="background-color: #EEF9F7;">
+            <h1 class="text-center custom-title">Nosotros</h1>
+            <div class="d-flex justify-content-center my-0">
+                <video autoplay loop muted playsinline class="w-100" style="max-width: 600px; height: auto;">
+                    <source src="./recursos/videos/vide8.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+            <h2 class="custom-title"></h2>
         </div>
 
-        <div id="descripcion">
+        <div class="mb-4 text-center">
+            <p>En Gamiverso, transformamos la educación mediante la gamificación, ofreciendo experiencias de aprendizaje motivadoras e innovadoras. Nuestro objetivo es ser un referente educativo, haciendo del aprendizaje un viaje emocionante y accesible para todos.</p>
+        </div>
 
-        <p>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            
-            Una de las cosas que disfruto de la vida son las plantas, más allá del<br /> tipo de plantas que me agradan, es la diversidad plantas que existen.<br /> Y es algo maravilloso, por esto me he motivado<br /> ha crear un blog donde pueda  hablar sobre las plantas y su mundo<br /> dando a conocer lo importante que son,  brindando <br />una comunidad donde nos enriquecemos todos de conocimiento<br /> de las plantas.
-        </p>
+        <div class="mb-4">
+            <h2 class="custom-title">Misión y Visión</h2>
+            <p>En Gamiverso, transformamos la educación mediante la gamificación, ofreciendo experiencias de aprendizaje motivadoras e innovadoras. Nuestro objetivo es ser un referente educativo, haciendo del aprendizaje un viaje emocionante y accesible para todos.</p>
+        </div>
+        <div class="mb-4">
+            <h2 class="custom-title">Valores Fundamentales</h2>
+            <p>Nuestros valores incluyen la innovación, la calidad, la inclusión y la pasión por la enseñanza y el crecimiento personal.</p>
+        </div>
+
+        <div class="mb-4 text-center">
+            <h2 class="custom-title">Llamado a la Acción</h2>
+            <p>Únete a Gamiverso: explora nuestros cursos, descarga recursos y suscríbete a nuestras actualizaciones para ser parte de una comunidad que celebra el aprendizaje. Cada lección es una misión por cumplir.</p>
+            <a href="https://payhip.com/Gamiverso" class="btn custom-btn mt-2" target="_blank">Explora nuestros productos</a>
+        </div>
+
+        <div class="text-center mt-0">
+            <h2 class="custom-title">Contáctanos</h2>
+            <video autoplay loop muted playsinline class="w-100" style="max-width: 600px; height: auto;">
+                <source src="./recursos/videos/vide7.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>Síguenos en nuestras redes sociales:</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://www.instagram.com/acolitameconciencia/" target="_blank" class="text-dark"><i class="bi bi-instagram"></i> Instagram</a>
+                <a href="https://www.facebook.com/acolitameconciencia" target="_blank" class="text-dark"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="https://www.tiktok.com/@acolitaconciencia?_t=8r5WponoJeA&_r=1" target="_blank" class="text-dark"><i class="bi bi-tiktok"></i> TikTok</a>
+                <a href="https://api.whatsapp.com/send?phone=593983076795" target="_blank" class="text-dark"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+            </div>
         </div>
     </div>
-<hr>
-
-
-
-    <!-- quinta seccion -->
-<div align="center">
-    <hr>   
-    <img src="./recursos/acerca/2018-04-01_0553-640x360.png" alt="">
-  
-
-</div>
-<div id="seccion3">
-    <p><span style="color:#47a17c" >Personas</span>  Creo que las plantas de interior saludables deberían ser accesibles para todos. Es por eso que encontrará artículos y consejos gratuitos, seleccionados por jardineros de interior experimentados por su contenido informativo, calidad y simplicidad, ¡todo eso con estilo!<br />
-
-        <br />
-        <span style="color:#47a17c" >El planeta</span> ¿Quién sabe cómo será el mundo dentro de 50 años? Quiero tener un impacto positivo en las ciudades de hoy, haciendo que nuestros paisajes urbanos sean más verdes, que a menudo son demasiado grises y aburridos. Este blog es solo la parte superior del iceberg, también estoy involucrado en una variedad de acciones ambientales en el mundo real.<br />
-        
-        <br />
-        <span style="color:#47a17c" >Plantas</span> ¡Ya lo tienes, soy un amante de las plantas! ¡Cualquier cosa que sea verde y tenga hojas me hace feliz!</p>
-</div>
-
-
-<div  align="center">
-    <img src="./recursos/acerca/trebol.png" alt="" align="center">
-    <p><br /></p>
-    
-</div>
-
-
-        <!-- footer -->
     <footer>
-    <p>Ecuador ,Riobamba ┃ Tel: 213-654 ┃ Email: Fabricio.rodriguez@espoch.edu.ec</p>
-    <h3>© 2021  <span style="color:rgba(66, 207, 188, 0.829)"> GREENGARDEN</span></h3>
-    <h5><span style="color:rgba(255, 255, 255, 0.829)" >☘ LAS PLANTAS SON VIDA ☘</span></h5>
+    <p style="margin: 5px 0; line-height: 1.2;">Ecuador ┃ Tel:+593 98 307 6795 ┃ </p>
+    <h3 style="margin: 5px 0; line-height: 1.2;"><span style="color:rgba(255, 255, 255, 0.829)">☘ Acolitame con ciencia - Gamiverso ☘</span></h3>
+    <h5 style="margin: 5px 0; line-height: 1.2;">© 2024</h5>
     </footer>
-    </body>
-    </html>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

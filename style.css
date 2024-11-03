@@ -30,14 +30,14 @@ body {
 }
 
 
-
 #barra {
+    font-family: 'Croissant one';
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background-color: #21515c;
 }
 
@@ -53,6 +53,33 @@ body {
     padding-left: 20px; /* Ajusta este valor para más o menos separación */
     
 }
+nav>a{
+    
+text-decoration: none;
+color:#ffffff;
+padding-left: 1rem;
+padding-right: 1rem;
+
+}
+nav > a:hover{
+   
+    color:#58b75c;
+
+    
+ }
+
+
+
+
+
+
+
+html, body {
+    height: 100%; /* Hacer que el html y body ocupen toda la altura */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
 
 .animate__animated.animate__fadeInDown{
@@ -67,28 +94,6 @@ body {
     z-index: 1; /* Asegura que el texto esté sobre el video */
   }  
 
-nav > a {
-  text-decoration: none;
-  color: #ffffff;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-nav > a:hover {
-  color: #58b75c;
-}
-
-* {
-    margin: 0; /* Eliminar márgenes predeterminados */
-    padding: 0; /* Eliminar relleno predeterminado */
-    box-sizing: border-box; /* Asegurarse de que el tamaño de los elementos se calcule correctamente */
-}
-
-html, body {
-    height: 100%; /* Hacer que el html y body ocupen toda la altura */
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
 
 
 
@@ -131,8 +136,8 @@ html, body {
 #seccion1Contenido > p {
     position: relative; 
     text-transform: capitalize;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.6rem; /* Tamaño de fuente para pantallas grandes */
+    font-family: 'Croissant one';
+    font-size: 2.7rem; /* Tamaño de fuente para pantallas grandes */
     margin-bottom: 0.5rem; /* Espacio inferior */
     font-weight: bold;
     text-align: center;
@@ -152,7 +157,7 @@ html, body {
 }
 
 #seccion1Contenido > h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Croissant one';
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: 700;
@@ -177,8 +182,9 @@ html, body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin-bottom: 20px;
+  height: 100vh; /* Establece la altura de la sección al 100% de la altura de la ventana */
+  width: 100%; /* Asegura que el ancho sea del 100% */
+
 }
 #subtitulo1 {
   margin-bottom: 2rem;
@@ -187,16 +193,13 @@ html, body {
 #seccion3 > h2 {
   text-transform: uppercase;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Croissant one';
   font-size: 2.5rem;
   font-weight: 700;
 }
 
 
-#seccion3 {
-    height: 100vh; /* Establece la altura de la sección al 100% de la altura de la ventana */
-    width: 100%; /* Asegura que el ancho sea del 100% */
-}
+
 
 #contenedor3 {
     display: grid;
@@ -224,14 +227,14 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(30, 102, 146, 0.2); /* Fondo transparente */
+    background: rgba(30, 102, 146, 0); /* Fondo transparente */
     opacity: 1;
     visibility: visible;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #f8f8f8; /* Color del texto */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Croissant one';
     font-size: 5rem;
     font-weight: 100;
 
@@ -258,7 +261,7 @@ html, body {
     align-items: center;
     justify-content: center;
     color: #f8f8f8; /* Color del texto */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Croissant one';
     font-size: 5rem;
     font-weight: 100;
 
@@ -280,7 +283,7 @@ html, body {
 
 .imagenesOrnamentales > p {
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Croissant one';
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -296,7 +299,6 @@ html, body {
     position: relative;
     height: 100vh;
     color: #f4f5f6;
-    display: flex;
     flex-direction: column;
     overflow: hidden; /* Asegúrate de ocultar el desbordamiento */
     text-shadow: 
@@ -321,7 +323,6 @@ html, body {
 #contener2 {
     position: relative; /* Para que el contenido esté sobre el video */
     z-index: 1; /* Asegúrate de que el contenido esté por encima */
-    display: flex; /* Mantiene el diseño de dos columnas */
 }
 
 
@@ -345,24 +346,21 @@ html, body {
   flex-direction: row;
 }
 
-
 #derecha {
-    flex: 1; /* Toma el espacio restante */
-    display: flex; /* Utiliza flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: flex-start; /* Alinea hacia la parte superior */
+    display: flex;
+    align-items: flex-start; /* Alinea el contenido al inicio del contenedor, es decir, arriba */
+    padding-top: 10px; /* Ajusta el espacio superior si es necesario */
 }
 
 #derecha > h3 {
     text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.6rem;
+    font-family: 'Croissant one';
+    font-size: 2rem;
     font-weight: 700;
-    margin: 0; /* Resetea márgenes */
-    padding-top: 100px; /* Ajusta este valor para subir el texto más */
-    text-align: center; /* Centra el texto */
+    margin: 0;
+    margin-top: 10px; /* Ajusta según el espacio que necesites */
+    text-align: center;
 }
-  
   
 
 
@@ -372,71 +370,60 @@ html, body {
     width: 90%;
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Mantiene la disposición en fila por defecto */
     align-items: center;
     margin-bottom: 0; /* Eliminar margen inferior */
-  }
-  
+    background-color: white;
+}
 
-
+/* Estilos para el texto en la sección izquierda */
 #izquierda5 > p {
-  margin-bottom: 4rem;
-  font-size: 1.7rem;
-}
-#izquierda5 > h3 {
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+    margin-bottom: 4rem;
+    font-size: 1.7rem;
 }
 
+#izquierda5 > h3 {
+    text-transform: uppercase;
+    font-family: 'Croissant one';
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
 
 #izquierda5 > hr {
     width: 10rem;
     border-color: #21b387;
     margin-left: 0; /* Cambia el margen izquierdo a 0 para alinear a la izquierda */
     margin-bottom: 3rem;
-  }
-  
+}
 
+/* Estilos para la sección derecha */
 #dere {
-  margin-left: 3rem;
-  margin-bottom: 4rem;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+    margin-left: 3rem;
+    margin-bottom: 4rem;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
+
 #derecha5 {
-  width: 60%;
-
-  justify-content: center;
-  align-items: center;
+    width: 900px; /* Mantiene el ancho del video en pantallas grandes */
+    height: 900px;
+    justify-content: center;
+    align-items: center;
 }
-
-
-
-
 
 footer {
-  background-color: rgb(11, 91, 102);
-  color: white;
-  padding-bottom: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-footer > h4 {
-  margin-top: -0rem;
-}
-
-footer > h3 {
-  margin-top: -0rem;
+    padding-top:  1rem;
+    background-color: rgb(11, 91, 102);
+    color: white;
+    text-align: center;
+    font-family: 'Croissant one';
 }
 
 
 /* Pantallas pequeñas (móviles) */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     #barra {
       font-size: 1rem;
       padding: 1rem;
@@ -460,6 +447,40 @@ footer > h3 {
 
     #seccion1Contenido > a {
         margin-top: 1rem; /* Ajustar el margen superior del enlace */
+    }
+    #seccion5 {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    #izquierda5 {
+        width: 100%; /* Asigna el 100% del ancho a la sección izquierda */
+        text-align: center; /* Centra el texto en la sección izquierda */
+    }
+
+    #dere {
+        width: 100%; /* Asigna el 100% del ancho a la sección derecha */
+         /* Permite que la altura se ajuste automáticamente */
+        margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+        margin-top: 1rem; /* Agrega un margen superior para separación */
+    }
+
+    #derecha5 {
+        width: 400px; /* Asigna el 100% del ancho a la sección derecha */
+        height: 400px; /* Permite que la altura se ajuste automáticamente */
+    }
+
+    video {
+        height: 100%; /* Ajusta la altura del video en pantallas pequeñas */
+        width: 100%; /* Asegura que el video llene el contenedor */
+        object-fit: cover; /* Cubre el área del contenedor sin distorsión */
+    }
+
+    #contenedor3 {
+        display: contents;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        height: 100vh;
     }
     
   }

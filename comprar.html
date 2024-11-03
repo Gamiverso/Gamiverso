@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opciones de Compra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+                h2 {
+            font-family: 'Croissant One', sans-serif;
+            font-size: 1.5rem;
+        }
+        #barra {
+            font-family: 'Croissant one';
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            font-size: 1.3rem;
+            background-color: #21515c;
+        }
+
+        #logo {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 24px;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1;
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: #ffffff;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        nav > a:hover {
+            color: #58b75c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .compra-section {
+            padding: 50px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .compra-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .compra-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .compra-card:hover {
+            transform: scale(1.05);
+        }
+        
+
+        .compra-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .compra-card:hover .compra-image {
+            transform: scale(1.1);
+        }
+
+        .compra-description {
+            padding: 20px;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+        }
+        .btn-whatsapp:hover {
+            background-color: #28ced0; /* Color verde más oscuro */
+            border-color: #040404;
+        }
+
+        .btn-payhip {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .btn-payhip:hover {
+            background-color: #28ced0; /* Color verde más oscuro */
+            border-color: #000000;
+        }
+
+        .highlight {
+            color: #ff6347;
+        }
+
+        #seccion1Contenido video {
+            max-width: 100%;
+            height: auto;
+            width: 500px;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+        .compra-texto {
+    font-size: 1.3rem; /* Tamaño base */
+}
+footer {
+            padding-top:  1rem;
+            background-color: rgb(11, 91, 102);
+            color: white;
+            text-align: center;
+            font-family: 'Croissant one';
+        }
+
+
+        /* Estilos responsivos */
+        @media (max-width: 600px) {
+
+                #barra {
+      font-size: 1rem;
+      padding: 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+
+            .compra-card {
+                margin-bottom: 20px;
+            }
+
+            .compra-image {
+                height: 200px;
+            }
+
+            #seccion1Contenido video {
+                width: 100%;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="seccion1">
+        <div id="barra">
+            <p id="logo">GAMIVERSO</p>
+            <nav>
+                <a href="./index.html">Inicio</a>
+                <a href="./comprar.html">Cómo comprar</a>
+                <a href="./productos.html">Productos</a>
+                <a href="./about.html">Nosotros</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="compra-section">
+        <h2 class="compra-title">Opciones de Compra</h2>
+        <div id="seccion1Contenido"> 
+            <video src="./recursos/videos/video6.mp4" autoplay muted loop></video>
+        </div>
+        <p class="compra-texto">¡Explora nuestra tienda y descubre los recursos que transformarán tu aprendizaje! Estamos aquí para apoyarte en cada paso de tu aventura educativa. <span class="highlight">¡Feliz compra!</span></p>
+
+
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Opción Ecuador -->
+                <div class="col-md-6">
+                    <div class="card compra-card">
+                        <img src="./recursos/videos/mitadd.png" alt="Compra en Ecuador" class="compra-image">
+                        <div class="compra-description">
+                            <h5>Si estás en Ecuador</h5>
+                            <p>¡Queremos que disfrutes de la mejor experiencia de compra! Escríbenos por WhatsApp para obtener tu recurso favorito mediante una transferencia bancaria.</p>
+                            <a href="https://wa.me/593983076795" class="btn btn-whatsapp mt-3" target="_blank" rel="noopener noreferrer">
+                                Contactar por WhatsApp
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Opción Internacional -->
+                <div class="col-md-6">
+                    <div class="card compra-card">
+                        <img src="./recursos/videos/img2.png" alt="Compra Internacional" class="compra-image">
+                        <div class="compra-description">
+                            <h5>Si estás en otro país</h5>
+                            <p>¡No te preocupes! Puedes acceder a nuestra tienda en Payhip y adquirir tus recursos fácilmente mediante PayPal.</p>
+                            <a href="https://payhip.com/Gamiverso" class="btn btn-payhip mt-3" target="_blank">
+                                Ir a la Tienda Payhip
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+    <footer >
+        <p style="margin: 5px 0; line-height: 1.2;">Ecuador ┃ Tel:+593 98 307 6795 ┃ </p>
+        <h3 style="margin: 5px 0; line-height: 1.2;"><span style="color:rgba(255, 255, 255, 0.829)">☘ Acolitame con ciencia - Gamiverso ☘</span></h3>
+        <h5 style="margin: 5px 0; line-height: 1.2;">© 2024</h5>
+        </footer>
+</body>
+</html>
