@@ -78,12 +78,16 @@
         }
 
         @media (max-width: 600px) {
-    #barra {
-      font-size: 1rem;
-      padding: 1rem;
-      flex-direction: column;
-      align-items: center;
-    }}
+            #barra {
+  font-size: 1rem;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center; 
+  display: flex; /* Asegura que se esté usando flexbox */
+  justify-content: center; /* Centra los elementos verticalmente */
+  text-align: center; /* Alinea el texto al centro */
+}
+}
 
     </style>
 </head>
