@@ -284,6 +284,12 @@ nav > a:hover{
                 padding: 0;
 
             }
+
+            #subseccion5 .compra-card {
+                margin: 0 15px; /* Separación horizontal */
+            }
+
+            
             body, .container-fluid {
                 margin: 0;
                 padding: 0;
